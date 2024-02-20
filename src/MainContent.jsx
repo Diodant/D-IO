@@ -1,14 +1,25 @@
 import React, { useState } from 'react';
 import mercuryImage from './img/mercury.webp';
 import venusImage from './img/venus.webp';
-import earthImage from './img/earth.webp';
+import earthImage from './img/earth2.webp';
+import marsImage from './img/mars.webp';
+import jupiterImage from './img/jupiter.webp';
+import saturnImage from './img/saturn.webp';
+import uranusImage from './img/uranus.webp';
+import neptuneImage from './img/neptune.webp';
+import plutoImage from './img/pluto.webp';
 
 
 const planetImages = {
     Mercury: mercuryImage,
     Venus: venusImage,
     Earth: earthImage,
-    Mars: 'marsImage',
+    Mars: marsImage,
+    Jupiter: jupiterImage,
+    Saturn: saturnImage,
+    Uranus: uranusImage,
+    Neptune: neptuneImage,
+    Pluto: plutoImage,
   };
 
   const planetLeftPositions = {
@@ -16,6 +27,11 @@ const planetImages = {
     Venus: '13rem',
     Earth: '13rem',
     Mars: '15.5rem',
+    Jupiter: '7.5rem',
+    Saturn: '10.5rem',
+    Uranus: '10.5rem',
+    Neptune: '7.5rem',
+    Pluto: '13rem',
   };
 
   const MainContent = () => {
