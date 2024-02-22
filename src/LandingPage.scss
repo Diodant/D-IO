@@ -1,11 +1,9 @@
 $tiber: #191919;
-$elephant: #0C383E;
 $white: #fff;
 
-// rem font sizing.
 html { font-size: 62.5%; }
-body { font-size: 1.4rem; } /* =14px */
-h1   { font-size: 2.4rem; } /* =24px */
+body { font-size: 1.4rem; }
+h1   { font-size: 2.4rem; }
 
 .container__item {
     margin: 0 auto 40px;
@@ -46,14 +44,26 @@ h1   { font-size: 2.4rem; } /* =24px */
 }
 
 .coords {
-    font-size: 1.3rem;
+    font-size: 1.5rem;
     display: inline-block;
     transform: rotate(-90deg) translateY(50%);
     position: relative;
-    top: 40%;
+    top: 36%;
     letter-spacing: 0.2rem;
     left: -11.5rem;
     margin: 0;
+}
+
+.planet_specification {
+    position: absolute;
+    width: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 5rem;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: 0.2rem;
 }
 
 .ellipses-container {
@@ -63,20 +73,19 @@ h1   { font-size: 2.4rem; } /* =24px */
     margin: 0 auto;
     position: relative;
     top: 10.5rem;
+}
 
-    .greeting {
-        position: absolute;
-        top: 23rem;
-        left: 13rem;
-        right: 0;
-        margin: 0 auto;
-        text-transform: uppercase;
-        letter-spacing: 4rem;
-        font-size: 2.2rem;
-        font-weight: 400;
-        color: $tiber;
-    }
-
+.greeting {
+    position: absolute;
+    top: 23rem;
+    left: 13rem;
+    right: 0;
+    margin: 0 auto;
+    text-transform: uppercase;
+    letter-spacing: 4rem;
+    font-size: 2.2rem;
+    font-weight: 400;
+    color: $tiber;
 }
 
 .container-image {
@@ -86,7 +95,6 @@ h1   { font-size: 2.4rem; } /* =24px */
     width: 100%;
     height: 100%;
     border-radius: 50%;
-
 }
 
 .ellipses {
@@ -102,20 +110,6 @@ h1   { font-size: 2.4rem; } /* =24px */
     border-width: 1px;
     border-color: rgba(9, 56, 62, 0.1);
     animation: ellipsesOrbit 15s ease-in-out infinite;
-
-
-    &:after {
-      content: "";
-      background-image: url('https://s29.postimg.org/5h0r4ftkn/ellipses_dial.png');
-      background-repeat: no-repeat;
-      background-position: center;
-      top: 0;
-      left: 0;
-      bottom: 0;
-      right: 0;
-      position: absolute;
-      opacity: 0.15;
-    }
 }
 
 .ellipses__outer--thick {
@@ -133,7 +127,7 @@ h1   { font-size: 2.4rem; } /* =24px */
     border-width: 2px;
     border-color: $tiber;
     top: 5rem;
-    right: 6.75rem;
+    right: 6.94rem;
 
     &:before {
         content: '';
@@ -148,12 +142,12 @@ h1   { font-size: 2.4rem; } /* =24px */
         position: absolute;
         top: 50%;
         transform: translateY(-50%);
-
     }
 }
+
 .scroller-container {
     height: 9rem;
-    width: 14rem;
+    width: 16rem;
     overflow-y: auto;
     position: absolute;
     right: 0;
@@ -161,34 +155,42 @@ h1   { font-size: 2.4rem; } /* =24px */
     transform: translateY(-50%);
     text-transform: uppercase;
     letter-spacing: 1rem;
-    font-size: 1rem;
+    font-size: 1.3rem;
     font-weight: 400;
     color: $tiber;
     cursor: pointer;
-  }
+}
 
-  .scroller-item {
-    height: 3rem;
+.scroller-item {
+    height: 3.3rem;
     display: flex;
     justify-content: center;
     align-items: center;
-    border-bottom: 0.1rem solid rgba(12, 56, 62, 0.5);
-  }
+    background-image: linear-gradient(to right, rgba(12, 56, 62, 0), rgba(12, 56, 62, 0.5), rgba(12, 56, 62, 0));
+    background-repeat: no-repeat;
+    background-size: 100% 0.1rem;
+    background-position: bottom;
+    transition: all 0.3s ease;
+}
 
-  .scroller-item.active {
+.scroller-item:last-child {
+    background-image: none;
+}
+
+.scroller-item.active {
     font-weight: 700;
     transform: scale(1.1);
-    transition: transform 0.3s ease-in-out, color 0.3s ease;
-  }
+    color: $tiber;
+}
 
-  .scroller-container::-webkit-scrollbar {
+.scroller-container::-webkit-scrollbar {
     display: none;
-  }
+}
 
-  .scroller-container {
+.scroller-container {
     -ms-overflow-style: none;
     scrollbar-width: none;
-  }
+}
 
 @keyframes ellipsesRotate {
     0% {
@@ -209,3 +211,50 @@ h1   { font-size: 2.4rem; } /* =24px */
         transform: rotate(360deg);
     }
 }
+
+@media (max-width: 768px) {
+    .content__wrapper {
+      width: 95%;
+      margin: 0 auto;
+    }
+
+    .coords {
+    display: flex;
+    justify-content: center;
+    font-size: 1.4rem;
+    width: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 70%;
+    }
+
+    .planet_specification {
+      font-size: 1.2rem;
+      padding: 0 1rem;
+    }
+
+    .ellipses-container {
+      width: 35rem;
+      height: 35rem;
+      top: 7rem;
+    }
+
+    .ellipses__orbit {
+        top: 7.2rem;
+        left: 1rem;
+    }
+
+    .greeting {
+      top: 16rem;
+      font-size: 2rem;
+      letter-spacing: 2.1rem;
+    }
+
+    .scroller-container {
+    left: 50%;
+    transform: translateX(-50%);
+    top: 67%;
+    }
+
+
+  }
