@@ -1,18 +1,24 @@
 {
   "files": {
-    "main.css": "/D-IO/static/css/main.5148c910.css",
-    "main.js": "/D-IO/static/js/main.ffc26b73.js",
+    "main.css": "/D-IO/static/css/main.ee885a38.css",
+    "main.js": "/D-IO/static/js/main.0e26a270.js",
     "static/js/453.f6643eee.chunk.js": "/D-IO/static/js/453.f6643eee.chunk.js",
     "static/media/earth.webp": "/D-IO/static/media/earth.d6d4d13f70315db7b823.webp",
     "static/media/mercury.webp": "/D-IO/static/media/mercury.4e8d5dc5661255807d09.webp",
-    "static/media/venus.webp": "/D-IO/static/media/venus.2b671e9ed3e5a0f546a5.webp",
+    "static/media/pluto.webp": "/D-IO/static/media/pluto.10bd373f8d7e544962b5.webp",
+    "static/media/jupiter.webp": "/D-IO/static/media/jupiter.7af9a713799910c966eb.webp",
+    "static/media/mars.webp": "/D-IO/static/media/mars.56f9e9e3f38e916575d4.webp",
+    "static/media/neptune.webp": "/D-IO/static/media/neptune.d0b27ecf8204c95b09dc.webp",
+    "static/media/venus.webp": "/D-IO/static/media/venus.a62cbe76a1708bbb4491.webp",
+    "static/media/uranus.webp": "/D-IO/static/media/uranus.6ec4b33c205c3b596a56.webp",
+    "static/media/saturn.webp": "/D-IO/static/media/saturn.615c1fdc6df747b5d6dd.webp",
     "index.html": "/D-IO/index.html",
-    "main.5148c910.css.map": "/D-IO/static/css/main.5148c910.css.map",
-    "main.ffc26b73.js.map": "/D-IO/static/js/main.ffc26b73.js.map",
+    "main.ee885a38.css.map": "/D-IO/static/css/main.ee885a38.css.map",
+    "main.0e26a270.js.map": "/D-IO/static/js/main.0e26a270.js.map",
     "453.f6643eee.chunk.js.map": "/D-IO/static/js/453.f6643eee.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.5148c910.css",
-    "static/js/main.ffc26b73.js"
+    "static/css/main.ee885a38.css",
+    "static/js/main.0e26a270.js"
   ]
 }
